@@ -1,3 +1,4 @@
+/* Universal */
 * {
     box-sizing: border-box;
 }
@@ -9,6 +10,7 @@ h1, h2, h3 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+/* Header */
 #header {
     background-color:#BEBEBE;
     height: 80px;
@@ -33,6 +35,9 @@ h1, h2, h3 {
 #name h1:hover {
     color: #BEBEBE;
 }
+
+/* Nav Bar */
+
 #header a {
     float: right;
     text-decoration: none;
@@ -54,18 +59,25 @@ ul {
 .active {
     background-color: #B18F9B; 
 }
+
+/* Body */
+
 #bigcontainer {
 
     height: auto;
+    width: auto;
     background-image: URL("../images/green_cup.png");
     padding:60px;
+    position: relative;
 }
 #innerdiv {
     padding: 40px;
     height: 500px;
     background-color: #FFFFFF;
+    margin: auto;
+    position: relative;
 }
-#innermostdiv h1 {
+#innerdiv h1 {
     margin: 0 auto;
 }
 hr {
@@ -79,7 +91,11 @@ img {
 }
 p {
     margin: 0;
+    
 }
+
+/* Footer */
+
 .footer {
     background-color: #B18F9B;
     height: 60px;
@@ -87,5 +103,5 @@ p {
     color: black;
     font-weight: bold;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
