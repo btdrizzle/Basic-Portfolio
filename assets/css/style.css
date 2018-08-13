@@ -70,6 +70,8 @@ ul {
     padding:60px;
     position: relative;
 }
+
+/* This one is different because of the floating pic I couldn't do auto height */
 #innerdiv {
     padding: 40px;
     height: 500px;
@@ -78,6 +80,7 @@ ul {
     position: relative;
     
 }
+/* Auto Height Div */
 #innerdiv1 {
     padding: 40px;
     height: auto;
@@ -104,21 +107,21 @@ hr {
 p {
     margin: 0;  
 }
-/* Style inputs with type="text", select elements and textareas */
+
+/* Form Styling for Contact Page*/
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
+    width: 100%; 
+    padding: 12px;  
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
+    margin-top: 6px; 
+    margin-bottom: 16px; 
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
+/* Submit Button */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #B18F9B;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -126,18 +129,20 @@ input[type=submit] {
     cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/* Hover over Button */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #9C7180;
 }
 
-/* Add a background color and some padding around the form */
+/* Form Container */
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
     margin: 0;
 }
+
+/* Flex Container and Elements */
 .containerflex {
     background-color: #f2f2f2;
     padding: 0;
@@ -178,6 +183,8 @@ input[type=submit]:hover {
     margin: auto;
     
 }
+
+/* Pics inside portfolio items */
 #docker {
     background-image: url("../images/docker.png");
 }
@@ -207,14 +214,17 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-/* /* /* Media Queries */
+/*  Media Queries */
+
+/* Gets rid of smaller nav on large screens */
 @media only screen and (min-width: 750px) {
     .smallnav {
         display: none;
     }
 }
 
-
+/* Accomodates smaller screens with a different nav and padding/margin options 
+   as well as different flex options for how to stack the items */
 @media only screen and  (max-width: 749px) {
     /*Header*/
     h1 {
@@ -270,6 +280,7 @@ input[type=submit]:hover {
         padding: 20px;
         height: auto;
     }
+    /* Different profile pic for smaller screen */
     .profilepic {
         background: url(./assets/images/DrakeProfileSmall.jpg);
         Width: 150px;
@@ -278,10 +289,13 @@ input[type=submit]:hover {
         margin: 0 auto;
         
     }
+    /* Bio below pic on smaller screens rather than wrapping around */
     p.bio {
         padding-top: 10px;
         position: relative;
     }
+    
+    /* Centers content in flex boxes on portfolio page for smaller screens */
     .containerflex {
         justify-content: space-around;
     }
