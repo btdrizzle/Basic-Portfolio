@@ -76,7 +76,10 @@ ul {
     background-color: #f2f2f2;
     margin: auto;
     position: relative;
-    
+   
+}
+#innerdiv h1 {
+    color: black;
 }
 /* Auto Height Div */
 #innerdiv1 {
