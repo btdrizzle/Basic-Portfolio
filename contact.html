@@ -12,16 +12,18 @@
 <body>
     <header>
         <div id="header">
-            <div id="name">
-                <h1>Brian T Drake</h1>
+            <div id="headercontainer">  <!-- This is to make header info stay 960 px or smaller on wide screens -->
+                <div id="name">
+                    <h1>Brian T Drake</h1>
+                </div>
+                <ul> <!--This nav is part of the header on larger screens-->
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="index.html">About</a></li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html">About</a></li>
-            </ul>
         </div>
-        <div class="smallnav">
+        <div class="smallnav"><!--This nav is for smaller screens... blocked on larger screens-->
             <ul>
                 <li><a href="index.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
