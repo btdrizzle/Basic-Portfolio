@@ -1,6 +1,17 @@
 /* Universal */
 * {
     box-sizing: border-box;
+    font-size: 16px; 
+    display: block;
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+title {
+    display: none;
 }
 
 body {
@@ -8,6 +19,20 @@ body {
 }
 h1, h2, h3 {
     font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.7em;
+}
+h3 {
+    font-size: 1.3em;
+}
+
+p {
+    line-height: 1.5;
 }
 
 /* Header */
@@ -42,9 +67,8 @@ h1, h2, h3 {
     display:block;
     color: black;
     font-size: 1.2em;
-    padding: 29px 20px;
+    padding: 30.8px 20px;
     text-align: center;
-    
     font-weight: bold;
 }
 #header a:hover {
@@ -58,11 +82,12 @@ ul {
     background-color: #B18F9B; 
 }
 
+
 /* Body */
 
 #bigcontainer {
 
-    height: auto;
+    min-height: 100%;
     width: auto;
     background-image: URL("../images/green_cup.png");
     padding:60px;
@@ -88,6 +113,7 @@ ul {
     background-color: #f2f2f2;
     margin: auto;
     position: relative;
+    
     
 }
 #innerdiv h1 {
@@ -140,7 +166,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* Flex Container and Elements */
@@ -212,8 +238,11 @@ input[type=submit]:hover {
     color: black;
     font-weight: bold;
     text-align: center;
-    padding: 20px;
-    ;
+    padding-top: 20px;
+    
+    
+    
+    
 }
 
 /*  Media Queries */
